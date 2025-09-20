@@ -1,0 +1,131 @@
+{
+  "orders": [
+    {
+      "id": 1001,
+      "order_date": "2024-01-15T10:30:00Z",
+      "total_amount": 249.99,
+      "status": "Delivered",
+      "payment_method": "Credit Card",
+      "offer_type": "New Year Sale",
+      "discount_applied": 15.00,
+      "items_count": 3
+    },
+    {
+      "id": 1002,
+      "order_date": "2024-02-03T14:22:00Z",
+      "total_amount": 89.50,
+      "status": "Shipped",
+      "payment_method": "Cash on Delivery",
+      "offer_type": "Weekend Special",
+      "discount_applied": 5.00,
+      "items_count": 1
+    },
+    {
+      "id": 1003,
+      "order_date": "2024-03-12T09:15:00Z",
+      "total_amount": 345.75,
+      "status": "Processing",
+      "payment_method": "UPI",
+      "offer_type": "Spring Collection",
+      "discount_applied": 25.00,
+      "items_count": 5
+    },
+    {
+      "id": 1004,
+      "order_date": "2024-01-28T16:45:00Z",
+      "total_amount": 156.25,
+      "status": "Delivered",
+      "payment_method": "Debit Card",
+      "offer_type": "Member Discount",
+      "discount_applied": 10.00,
+      "items_count": 2
+    },
+    {
+      "id": 1005,
+      "order_date": "2024-02-17T11:30:00Z",
+      "total_amount": 78.99,
+      "status": "Cancelled",
+      "payment_method": "Wallet",
+      "offer_type": "Flash Sale",
+      "discount_applied": 8.00,
+      "items_count": 1
+    },
+    {
+      "id": 1006,
+      "order_date": "2024-03-05T13:10:00Z",
+      "total_amount": 210.00,
+      "status": "Delivered",
+      "payment_method": "Net Banking",
+      "offer_type": "Festival Offer",
+      "discount_applied": 20.00,
+      "items_count": 4
+    },
+    {
+      "id": 1007,
+      "order_date": "2024-01-09T18:20:00Z",
+      "total_amount": 325.50,
+      "status": "Returned",
+      "payment_method": "Credit Card",
+      "offer_type": "Clearance Sale",
+      "discount_applied": 30.00,
+      "items_count": 6
+    },
+    {
+      "id": 1008,
+      "order_date": "2024-02-25T15:05:00Z",
+      "total_amount": 95.75,
+      "status": "Delivered",
+      "payment_method": "Cash on Delivery",
+      "offer_type": "No Discount",
+      "discount_applied": 0.00,
+      "items_count": 1
+    },
+    {
+      "id": 1009,
+      "order_date": "2024-03-18T12:40:00Z",
+      "total_amount": 187.30,
+      "status": "Shipped",
+      "payment_method": "UPI",
+      "offer_type": "Loyalty Points",
+      "discount_applied": 12.50,
+      "items_count": 3
+    },
+    {
+      "id": 1010,
+      "order_date": "2024-01-22T08:55:00Z",
+      "total_amount": 412.80,
+      "status": "Delivered",
+      "payment_method": "Debit Card",
+      "offer_type": "Season Sale",
+      "discount_applied": 35.00,
+      "items_count": 7
+    }
+  ],
+  "paymentMethods": [
+    "Credit Card",
+    "Debit Card",
+    "UPI",
+    "Net Banking",
+    "Wallet",
+    "Cash on Delivery"
+  ],
+  "offerTypes": [
+    "New Year Sale",
+    "Weekend Special",
+    "Spring Collection",
+    "Member Discount",
+    "Flash Sale",
+    "Festival Offer",
+    "Clearance Sale",
+    "Loyalty Points",
+    "Season Sale",
+    "No Discount"
+  ],
+  "orderStatuses": [
+    "Processing",
+    "Shipped",
+    "Delivered",
+    "Cancelled",
+    "Returned"
+  ]
+}
