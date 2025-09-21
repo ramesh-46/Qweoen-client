@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Qweoen - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the **frontend** of the Qweoen full-stack application. Built with **React.js**, it provides an interactive UI for managing customers, addresses, and other app features.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Technologies Used
 
-### `npm start`
+- **React.js** - For building a dynamic, component-based UI
+- **CSS** - For styling and responsive design
+- **JavaScript (ES6+)** - Logic, state management, and interactivity
+- **Axios / Fetch API** - For connecting to the backend APIs
+- **React Router** - For navigation between pages
+- **Optional Libraries:** Any additional UI libraries you used (like Material-UI, etc.)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Pages / Components
 
-### `npm test`
+1. **Home / Dashboard**  
+   - Overview of customers and addresses  
+   - Quick search and filter options  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Customer Page**  
+   - Add, update, delete customer details  
+   - View customer addresses  
 
-### `npm run build`
+3. **Address Page / Modal**  
+   - Add or update addresses  
+   - View multiple addresses for a customer  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Search / Filter**  
+   - Search customers by name, phone number, or address  
+   - Filter by single/multiple addresses  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. **Profile / About / Contact (Optional)**  
+   - Personal info about the developer  
+   - Contact links  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+6. **Navigation Bar**  
+   - Navigate between pages  
+   - Optional: Logout or user menu  
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Setup Instructions
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ramesh-46/Qweoen-client.git
+   cd Qweoen-client
+Install dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+Start the development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+Open in browser: https://qweoen-client.vercel.app/
+Folder Structure (Recommended)
+Qweoen-client/
+├─ public/
+├─ src/
+│  ├─ components/      # Reusable UI components
+│  ├─ pages/           # All page-level components
+│  ├─ services/        # API calls to backend
+│  ├─ App.js           # Main app routing
+│  └─ index.js         # Entry point
+├─ package.json
+└─ README.md
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1904dd63-07b8-46b5-a8c9-a18d678075a2" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bb035a81-4f28-4608-9623-eeffb3972078" />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4d2ad9ff-d295-4d47-be36-7faeeb3980ac" />
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
