@@ -15,7 +15,7 @@ function CustomerDetailPage() {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://localhost:5000/api/customers/${id}`)
+      .get(`https://qwoen.onrender.com/api/customers/${id}`)
       .then((response) => {
         const data = response.data.data;
         setCustomer(data);

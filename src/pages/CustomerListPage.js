@@ -38,7 +38,7 @@ const [idFilter, setIdFilter] = useState("");
 
   useEffect(() => {
     setLoading(true);
-    axios.get('http://localhost:5000/api/customers')
+    axios.get('https://qwoen.onrender.com/api/customers')
       .then(response => {
         const customersWithOrders = (response.data.data || []).map(customer => ({
           ...customer,
@@ -131,10 +131,14 @@ const [idFilter, setIdFilter] = useState("");
     if (!confirmCustomerId) return;
 
     setDeletingId(confirmCustomerId);
+
+
+
+
     setShowConfirm(false);
 
     try {
-      await axios.delete(`http://localhost:5000/api/customers/${confirmCustomerId}`);
+      await axios.delete(`https://qwoen.onrender.com/api/customers/${confirmCustomerId}`);
       
       setCustomers(prev => prev.filter(c => c.id !== confirmCustomerId));
       setMessage({

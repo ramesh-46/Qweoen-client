@@ -41,7 +41,7 @@ function CustomerFormPage() {
     if (isEdit) {
       setLoading(true);
       axios
-        .get(`http://localhost:5000/api/customers/${id}`)
+        .get(`https://qwoen.onrender.com/api/customers/${id}`)
         .then((res) => {
           const data = res.data.data;
           setCustomerData({
@@ -98,10 +98,10 @@ function CustomerFormPage() {
       let customerId = id;
 
       if (isEdit) {
-        await axios.put(`http://localhost:5000/api/customers/${id}`, customerData);
+        await axios.put(`https://qwoen.onrender.com/api/customers/${id}`, customerData);
         setMessage({ text: "🎉 Customer info updated successfully!", type: "success" });
       } else {
-        const res = await axios.post("http://localhost:5000/api/customers", customerData);
+        const res = await axios.post("https://qwoen.onrender.com/api/customers", customerData);
         customerId = res.data.customerId;
         setMessage({ text: "🎉 Customer created! Now add addresses.", type: "success" });
       }
@@ -150,13 +150,13 @@ function CustomerFormPage() {
 
     try {
       if (editingAddressId) {
-        const res = await axios.put(`http://localhost:5000/api/addresses/${editingAddressId}`, addressForm);
+        const res = await axios.put(`https://qwoen.onrender.com/api/addresses/${editingAddressId}`, addressForm);
         setAddresses((prev) =>
           prev.map((addr) => (addr.id === editingAddressId ? res.data.address : addr))
         );
         setMessage({ text: "🎉 Address updated successfully!", type: "success" });
       } else {
-        const res = await axios.post("http://localhost:5000/api/addresses", {
+        const res = await axios.post("https://qwoen.onrender.com/api/addresses", {
           customer_id: id,
           ...addressForm,
         });
@@ -190,7 +190,7 @@ function CustomerFormPage() {
     if (!window.confirm("🗑️ Are you sure you want to delete this address? This action cannot be undone.")) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/addresses/${addressId}`);
+      await axios.delete(`https://qwoen.onrender.com/api/addresses/${addressId}`);
       setAddresses((prev) => prev.filter((addr) => addr.id !== addressId));
       setMessage({ text: "🗑️ Address deleted successfully.", type: "success" });
     } catch (error) {
